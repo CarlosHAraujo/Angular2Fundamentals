@@ -38,6 +38,10 @@
     <Content Include="app\assets\images\ng-conf.png" />
     <Content Include="app\assets\images\ng-nl.png" />
     <Content Include="app\assets\images\ng-vegas.png" />
+    <Content Include="app\error\404.component.ts" />
+    <Content Include="app\events\event-details\event-details.component.html" />
+    <Content Include="app\events\events-thumbnail.component.html" />
+    <Content Include="app\nav\navbar.components.html" />
     <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="package.json" />
@@ -49,9 +53,29 @@
     <Folder Include="app\" />
     <Folder Include="app\assets\" />
     <Folder Include="app\assets\images\" />
+    <Folder Include="app\events\" />
+    <Folder Include="app\events\event-details\" />
+    <Folder Include="app\events\Shared\" />
+    <Folder Include="app\nav\" />
+    <Folder Include="app\common\" />
+    <Folder Include="app\error\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="systemjs.config.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\common\toastr.service.ts" />
+    <TypeScriptCompile Include="app\events-app.component.ts" />
+    <TypeScriptCompile Include="app\events\create-event.component.ts" />
+    <TypeScriptCompile Include="app\events\event-details\event-details.component.ts" />
+    <TypeScriptCompile Include="app\events\event-details\event-route.activator.service.ts" />
+    <TypeScriptCompile Include="app\events\event-thumbnail.component.ts" />
+    <TypeScriptCompile Include="app\events\events-list.component.ts" />
+    <TypeScriptCompile Include="app\events\Shared\event.service.ts" />
+    <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\nav\navbar.components.ts" />
+    <TypeScriptCompile Include="app\routes.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
