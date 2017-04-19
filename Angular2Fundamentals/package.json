@@ -35,10 +35,11 @@
     "zone.js": "~0.6.26"
   },
   "devDependencies": {
-    "concurrently": "2.2.0",
-    "typescript": "~2.0.3",
     "@types/core-js": "0.9.36",
-    "@types/node": "~6.0.46"
+    "@types/node": "~6.0.46",
+    "concurrently": "2.2.0",
+    "tslint": "^5.1.0",
+    "typescript": "~2.0.3"
   },
   "repository": {}
 }

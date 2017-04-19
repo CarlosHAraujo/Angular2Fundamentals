@@ -11,8 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>465b0eb8-392d-4b99-a867-0569bb16feea</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>app\events\shared\duration.pipe.ts</StartupFile>
     <StartWebBrowser>False</StartWebBrowser>
     <SearchPath>
     </SearchPath>
@@ -39,15 +38,24 @@
     <Content Include="app\assets\images\ng-nl.png" />
     <Content Include="app\assets\images\ng-vegas.png" />
     <Content Include="app\error\404.component.ts" />
+    <Content Include="app\events\create-event.component.html" />
+    <Content Include="app\events\event-details\create-session.component.html" />
     <Content Include="app\events\event-details\event-details.component.html" />
+    <Content Include="app\events\event-details\session-list.component.html" />
+    <Content Include="app\events\event-details\upvote.component.css" />
     <Content Include="app\events\events-thumbnail.component.html" />
     <Content Include="app\nav\navbar.components.html" />
+    <Content Include="app\user\auth.service.ts" />
+    <Content Include="app\user\login.component.html" />
+    <Content Include="app\user\profile.component.html" />
+    <Content Include="app\user\user.routes.ts" />
     <Content Include="favicon.ico" />
     <Content Include="index.html" />
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="styles.css" />
     <Content Include="tsconfig.json" />
+    <Content Include="tslint.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
@@ -55,27 +63,54 @@
     <Folder Include="app\assets\images\" />
     <Folder Include="app\events\" />
     <Folder Include="app\events\event-details\" />
-    <Folder Include="app\events\Shared\" />
+    <Folder Include="app\events\shared\" />
     <Folder Include="app\nav\" />
     <Folder Include="app\common\" />
     <Folder Include="app\error\" />
+    <Folder Include="app\user\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="karma-test-shim.js" />
+    <Compile Include="karma.conf.js" />
     <Compile Include="systemjs.config.js" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="app\app.module.ts" />
+    <TypeScriptCompile Include="app\common\collapsible-well.component.ts" />
+    <TypeScriptCompile Include="app\common\index.ts" />
+    <TypeScriptCompile Include="app\common\jQuery.service.ts" />
+    <TypeScriptCompile Include="app\common\modal-trigger.directive.ts" />
+    <TypeScriptCompile Include="app\common\simple-modal.component.ts" />
     <TypeScriptCompile Include="app\common\toastr.service.ts" />
     <TypeScriptCompile Include="app\events-app.component.ts" />
     <TypeScriptCompile Include="app\events\create-event.component.ts" />
+    <TypeScriptCompile Include="app\events\event-details\create-session.component.ts" />
     <TypeScriptCompile Include="app\events\event-details\event-details.component.ts" />
-    <TypeScriptCompile Include="app\events\event-details\event-route.activator.service.ts" />
+    <TypeScriptCompile Include="app\events\event-details\index.ts" />
+    <TypeScriptCompile Include="app\events\event-details\session-list.component.integrated.spec.ts" />
+    <TypeScriptCompile Include="app\events\event-details\session-list.component.isolated.spec.ts" />
+    <TypeScriptCompile Include="app\events\event-details\session-list.component.ts" />
+    <TypeScriptCompile Include="app\events\event-details\upvote.component.ts" />
+    <TypeScriptCompile Include="app\events\event-details\voter.service.spec.ts" />
+    <TypeScriptCompile Include="app\events\event-details\voter.service.ts" />
+    <TypeScriptCompile Include="app\events\event-list-resolver.service.ts" />
     <TypeScriptCompile Include="app\events\event-thumbnail.component.ts" />
     <TypeScriptCompile Include="app\events\events-list.component.ts" />
-    <TypeScriptCompile Include="app\events\Shared\event.service.ts" />
+    <TypeScriptCompile Include="app\events\index.ts" />
+    <TypeScriptCompile Include="app\events\location-validator.directive.ts" />
+    <TypeScriptCompile Include="app\events\shared\event-resolver.service.ts" />
+    <TypeScriptCompile Include="app\events\shared\event.model.ts" />
+    <TypeScriptCompile Include="app\events\shared\event.service.ts" />
+    <TypeScriptCompile Include="app\events\shared\index.ts" />
+    <TypeScriptCompile Include="app\events\shared\restricted-words.validator.ts" />
     <TypeScriptCompile Include="app\main.ts" />
     <TypeScriptCompile Include="app\nav\navbar.components.ts" />
     <TypeScriptCompile Include="app\routes.ts" />
+    <TypeScriptCompile Include="app\rxjs-extensions.ts" />
+    <TypeScriptCompile Include="app\user\login.component.ts" />
+    <TypeScriptCompile Include="app\user\profile.component.ts" />
+    <TypeScriptCompile Include="app\user\user.model.ts" />
+    <TypeScriptCompile Include="app\user\user.module.ts" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
